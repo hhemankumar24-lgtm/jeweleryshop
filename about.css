@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}.logo h1{
+    margin-left: 50%;
+    margin-top: -20%;
+}
+
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.about-us {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #e67e22;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-us .mission {
+    max-width: 900px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-us .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-us .image-container img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about-us .image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments for About Us Page */
+@media screen and (max-width: 768px) {
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-us .image-container {
+        flex-direction: column;
+    }
+
+    .about-us .image-container img {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-us .mission {
+        font-size: 1rem;
+    }
+
+    .about-us .image-container img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
